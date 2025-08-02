@@ -7,12 +7,19 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Animate.css CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Tien Trung</div>
+<h1 class="title animate__animated animate__flipInX" data-aos="fade-up">Mai Tiến Trung</h1>
       <div>
-        <ul class="nav-links">
+<ul class="nav-links" data-aos="flip-up">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -30,16 +37,15 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
+<section id="profile" data-aos="flip-up">
       
       <div class="section__text">
         <p class="section__text__p1">Xin chào, Tôi là</p>
-        <h1 class="title">Mai Tiến Trung</h1>
+<h1 class="title animate__animated animate__flipInX">Mai Tiến Trung</h1>
         <p class="section__text__p2">Backend Developer</p>
         <div class="btn-container">
           <button
@@ -68,7 +74,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
+<section id="about" data-aos="flip-up">
       <h1 class="title">Giới thiệu</h1>
       
         
@@ -81,7 +87,7 @@
                 đóng góp vào các hệ thống lớn và tối ưu hóa hiệu suất.
             </p>
     </section>
-    <section id="experience">
+<section id="experience" data-aos="flip-up">
       <h1 class="title">Kinh nghiệm của tôi</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -171,12 +177,15 @@
                   <h3>PostgreSQL</h3>
                   <p>Experienced</p>
                 </div>
-            </div>
+            
+              </div>
+            
           </div>
-         
+
     </section>
     
-    <section id="contact">
+    
+<section id="contact" data-aos="flip-up">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -214,7 +223,7 @@
     <footer>
       <nav>
         <div class="nav-links-container">
-          <ul class="nav-links">
+<ul class="nav-links" data-aos="flip-up">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
            
@@ -225,5 +234,14 @@
   
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // hiệu ứng kéo dài 1 giây
+    once: false,
+  });
+</script>
+
   </body>
 </html>
